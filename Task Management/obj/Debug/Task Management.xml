@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Task Management
+</name>
+</assembly>
+<members>
+<member name="T:Task_Management.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Task_Management.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Task_Management.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Task_Management.Database.query(System.String,System.Data.DataSet,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ Mendapatkan data dari query yang diberikan, lalu menambahkan datatable ke dataset dengan nama tabel yang diinginkan.
+ Akan mengembalikan data dengan parameter isSuccess yang menentukan sukses atau tidaknya proses
+ Kemudian mengembalikan dataset yang belum berubah jika gagal, disertai errorMessage yang berisi pesan error jika ditemukan error
+ </summary>
+ <param name="sqlQuery">Query yang akan dijalankan untuk mendapatkan data</param>
+ <param name="dataset">Dataset yang akan menampung datatable berisi hasil dari query </param>
+ <param name="tableName">Nama tabel yang digunakan untuk hasil query ini</param>
+ <param name="queryParams">(Optional) Parameter yang digunakan ketika query dijalankan. Disarankan menggunakan parameter untuk meningkatkan keamanan</param>
+ <returns></returns>
+</member>
+</members>
+</doc>
